@@ -1,0 +1,24 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "mongodb"
+  url      = env("DATABASE_URL")
+}
+
+model menu {
+  id       String @id @default(auto()) @map("_id") @db.ObjectId
+  CAL      String? // Calories
+  CARB     String? // Carbohydrates
+  CATEGORY String? // Category
+  CHOL     String? // Cholesterol
+  FAT      String? // Fat
+  FBR      String? // Fiber
+  ITEM     String? // Item Name
+  PRO      String? // Protein
+  SALT     String? // Sodium
+  SFAT     String? // Saturated Fat
+  SGR      String? // Sugars
+  TFAT     String? // Trans Fat
+}
