@@ -21,6 +21,10 @@
       "dest": "public/$1"
     },
     {
+      "src": "/",
+      "dest": "public/index2.html"
+    },
+    {
       "src": "/(.*)",
       "dest": "public/$1"
     }
