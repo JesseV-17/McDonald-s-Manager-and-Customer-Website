@@ -5,7 +5,7 @@
   "main": "server.js",
   "scripts": {
     "setup": "npm install",
-    "start": "node --watch --env-file=.env server.js",
+    "start": "node --watch server.js",
     "postinstall": "prisma generate"
   },
   "keywords": [],
@@ -14,6 +14,7 @@
   "type": "module",
   "dependencies": {
     "@prisma/client": "^6.18.0",
+    "dotenv": "^17.2.3",
     "express": "^5.1.0",
     "vercel": "^48.11.1"
   },
